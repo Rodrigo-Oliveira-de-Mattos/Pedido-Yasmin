@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido mas com jogo da velha (e escolha)</title>
+
+    <link rel="shortcut icon" href="src/img/favicon-32x32.png">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/font.css">
+    <link rel="stylesheet" href="src/css/card.css">
+
+</head>
+<body>
+    <header>
+        <!-- Estilos: rosa, azul, roxo com verde -->
+    </header>
+
+    <!-- criar uma caixa de pergunta para esconder a carta virando no começo -->
+
+    <div class="container">
+        <div class="card">
+            
+
+            <div class="back">
+                <div class="pedido">
+                    <h1>O GRANDE PEDIDO</h1>
+
+                    <img src="src/img/fish-kiss.gif" alt="gif de peixes" title="2 peixes românticos (a imagem de peixe mais romântica que eu achei)" draggable="false">
+    
+                    <div class="text-pedido">
+                        <h3>Yasmin, aceita namorar comigo?</h3>
+                    </div>
+                
+                    <div class="botoes">
+                        <a href="jogo-da-velha.html">SIM🥰</a>
+                        <a onmouseover="desvia(this)" onclick="desvia(this)" href="#">NÂO 🥹</a>
+                    </div>
+                </div>
+            </div>
+            <div class="front"></div>
+        </div>
+    </div>
+
+    <script>
+        function desvia(t){
+            var btn = t; 
+            btn.style.position = 'absolute';
+            btn.style.top = randomNumber(10, 90);
+            btn.style.left = randomNumber(10, 90);
+            console.log(btn);
+        }
+
+        function randomNumber(min, max){
+            return (Math.random() * (max - min) + min) + "%";
+        }
+
+    </script>
+    
+</body>
+</html>

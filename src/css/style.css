@@ -1,0 +1,32 @@
+.container{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+
+    background-color: green;
+}
+
+.pedido img{
+    width: 250px;
+    border-radius: 15px;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.botoes a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    width: 100px;
+    height: 50px;
+    background-color: blueviolet;
+    color: white;
+}
+
