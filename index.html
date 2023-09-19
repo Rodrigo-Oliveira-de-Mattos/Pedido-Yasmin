@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartinha</title>
+    <title>Pedido mas com jogo da velha (e escolha)</title>
 
     <link rel="shortcut icon" href="src/img/favicon-32x32.png">
 
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/font.css">
+    <link rel="stylesheet" href="src/css/card.css">
 
 </head>
 <body>
@@ -17,18 +18,46 @@
         <!-- Estilos: rosa, azul, roxo com verde -->
     </header>
 
-    <main>
-        <div class="container">
-            <h1>Cartinha para Yasminha querida</h1>
+    <!-- criar uma caixa de pergunta para esconder a carta virando no começo -->
 
-            <div id="text">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, sit soluta. Ex aut id vero facere optio saepe doloremque inventore nulla beatae, quibusdam nobis atque mollitia, non neque iusto ipsa nam amet illo odit? Reprehenderit sit ab vel nulla rem, hic, libero, dolores magnam quam praesentium aspernatur? Veniam, a! Error fugiat magni asperiores accusamus aliquid sapiente labore dolor hic quisquam qui nulla laudantium, ipsa eaque unde architecto accusantium commodi eveniet laboriosam tempora quidem esse fuga! Similique incidunt blanditiis rem, atque aliquam, nihil suscipit quod eligendi esse porro, eos quos error fugiat possimus illo molestias quisquam veritatis neque consequatur recusandae cupiditate?</p>
+    <div class="container">
+        <div class="card">
+            <h1>O GRANDE PEDIDO</h1>
+
+            <div class="back">
+                <div class="pedido">
+
+                    <div class="text-pedido">
+                        <h3>Yasmore mio,</h3>
+                    </div>
+
+                    <img src="src/img/fish-kiss.gif" alt="gif de peixes" title="2 peixes românticos (a imagem de peixe mais romântica que eu achei)" draggable="false">
+    
+                    <div class="text-pedido">
+                        <h3>aceita casar comigo?</h3>
+                    </div>
+                
+                    <div class="botoes">
+                        <a href="aaaaaaaaaa.html">SIM🥰</a>
+                        <a onmouseover="desvia(this)" onclick="desvia(this)" href="#">NÂO 🥹</a>
+                    </div>
+                </div>
             </div>
-            
-            <a href="pedido-impossivel.html">Continuar</a>
-
+            <div class="front">
+                <p id="interrogacao">?</p>
+            </div>
         </div>
-    </main>
+    </div>
 
+    <script>
+        function desvia(t){
+            var btn = t; 
+            btn.style.position = 'absolute';
+            btn.style.top = randomNumber(10, 90);
+            btn.style.left = randomNumber(10, 90);
+            console.log(btn);
+        }
+    </script>
+    
 </body>
 </html>

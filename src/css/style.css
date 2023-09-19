@@ -1,11 +1,16 @@
+html{
+    background-color: #8e22bb;
+}
+
 .container{
     display: flex;   
     align-items: center;
     justify-content: center;
     height: 100vh;
     flex-direction: column;
-
-    background-color: green;
+}
+h1{
+    text-align: center;
 }
 
 .pedido img{
@@ -30,3 +35,9 @@
     color: white;
 }
 
+.front{
+    background-color: #26bd60;
+}
+.back{
+    background-color: #64cf92;
+}
